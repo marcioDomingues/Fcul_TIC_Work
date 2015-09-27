@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="2projeto-css">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="2projeto-cssEJB.jar" deploy-path="/" handle="module:/resource/2projeto-cssEJB/2projeto-cssEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="2projeto-cssClient.jar" deploy-path="/" handle="module:/resource/2projeto-cssClient/2projeto-cssClient">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="2projeto-cssWeb.war" deploy-path="/" handle="module:/resource/2projeto-cssWeb/2projeto-cssWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="2projeto-css-ejbClient.jar" deploy-path="/lib" handle="module:/resource/2projeto-css-ejbClient/2projeto-css-ejbClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

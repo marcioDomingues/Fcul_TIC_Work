@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'berkelium_64medium';
+    src: url('.../styles/myFonts/berkelium64-webfont.eot');
+    src: url('.../styles/myFonts/berkelium64-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.../styles/myFonts/berkelium64-webfont.woff') format('woff'),
+         url('.../styles/myFonts/berkelium64-webfont.ttf') format('truetype'),
+         url('.../styles/myFonts/berkelium64-webfont.svg#berkelium_64medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.overlay_GREENwindow {
+	background-color: #000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.GREENwindow_nw {
+	background: transparent url(GREENwindow/left-top.gif) no-repeat 0 0;			
+  width:10px;
+  height:25px;
+}
+
+.GREENwindow_n {
+  background: transparent url(GREENwindow/top-middle.gif) repeat-x 0 0;			
+  height:25px;
+}
+
+.GREENwindow_ne {
+  background: transparent url(GREENwindow/right-top.gif) no-repeat 0 0;			
+  width:10px;	  
+  height:25px;
+}
+
+.GREENwindow_w {
+  background: transparent url(GREENwindow/frame-left.gif) repeat-y top left;			
+  width:7px;
+}
+
+.GREENwindow_e {
+  background: transparent url(GREENwindow/frame-right.gif) repeat-y top right;			
+  width:7px;	  
+}
+
+.GREENwindow_sw {
+  background: transparent url(GREENwindow/bottom-left-c.gif) no-repeat 0 0;			
+  width:7px;
+  height:7px;
+}
+
+.GREENwindow_s {
+  background: transparent url(GREENwindow/bottom-middle.gif) repeat-x 0 0;			
+  height:7px;
+}
+
+.GREENwindow_se, .GREENwindow_sizer  {
+  background: transparent url(GREENwindow/bottom-right-c.gif) no-repeat 0 0;			
+  width:7px;
+  height:7px;
+}
+
+.GREENwindow_sizer {
+	cursor:se-resize;	
+}
+
+.GREENwindow_close {
+	width: 23px;
+	height: 23px;
+	background: transparent url(GREENwindow/button-close-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:0px;
+	right:11px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.GREENwindow_minimize {
+	width: 23px;
+	height: 23px;
+	background: transparent url(GREENwindow/button-min-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:0px;
+	right:55px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.GREENwindow_maximize {
+	width: 23px;
+	height: 23px;
+	background: transparent url(GREENwindow/button-max-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:0px;
+	right:33px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.GREENwindow_title {
+	float:left;
+	height:14px;
+	font-size:14px;
+	text-align:center;
+	margin-top:2px;
+	width:100%;
+	font: 15px berkelium_64medium;
+	color:#000;
+}
+
+.GREENwindow_content {
+	overflow:auto;
+	color: #0F0;
+	font: 15px berkelium_64medium;
+	background:#000;
+}
+
+/* For alert/confirm dialog */
+.GREENwindow_window {
+	border:1px solid #F00;	
+	background: #FFF;
+	padding:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+
+.GREENwindow_message {
+    font: 12px arial;
+	text-align:center;
+	width:100%;
+	padding-bottom:10px;
+}
+
+.GREENwindow_buttons {
+	text-align:center;
+	width:100%;
+}
+
+.GREENwindow_buttons input {
+	width:20%;
+	margin:10px;
+}
+
+.GREENwindow_progress {
+	float:left;
+	margin:auto;
+	text-align:center;
+	width:100%;
+	height:16px;
+	background: #FFF url('alert/progress.gif') no-repeat center center
+}
+
+.GREENwindow_wired_frame {
+	background: #FFF;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;	
+}
+
+

@@ -1,0 +1,23 @@
+#
+#
+#
+alert tcp any any -> 10.101.148.46 :1024 (msg:"port scanner"; threshold:type both, track by_src, count 5 , seconds 60;  sid:1000011; rev:0;priority:1;)
+
+
+#
+#
+#
+alert tcp any any -> 10.101.148.46 25565 (msg:"client tring to connect 3 times to secShareServer"; threshold:type threshold, track by_src, count 3 , seconds 20; sid:1000012; rev:1;priority:1;)
+
+
+# TEMOS QUE TESTAR
+#
+# Decidiu-se adicionar mais uma regra para 
+# monitorizar acessos externos ao porto do serviço de DNS (53). Não serão monotorizados exploits especificos. 
+# Temos que monotorizar acessos nos dois protocolos usados pelo serviço de DNS
+# TCP e UDP
+# alert uma vez a cada 10 pedidos no intervalo de 1 minuto  	
+# flow to server monitoriza o trafico de acesso ao porto
+# set com prioridade baixa
+alert udp any any -> 10.101.148.46 53 (msg:"Many incoming DNS requests on udp!";flow:stateless,to_server;threshold:type limit, track by_src, count 10 , seconds 60;sid:9000000;priority:5;)
+alert tcp any any -> 10.101.148.46 53 (msg:"Many incoming DNS request on tcp!";flow:stateless,to_server;threshold:type limit, track by_src, count 10 , seconds 60;sid:9000000;priority:5;)

@@ -1,0 +1,220 @@
+
+/************************************************
+	user fonts
+************************************************/
+@font-face {
+    font-family: 'apple_regular';
+    src: url('apple_-webfont.eot');
+    src: url('myFonts/apple_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/apple_-webfont.woff') format('woff'),
+         url('myFonts/apple_-webfont.ttf') format('truetype'),
+         url('myFonts/apple_-webfont.svg#apple_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'berkelium_64medium';
+    src: url('myFonts/berkelium64-webfont.eot');
+    src: url('myFonts/berkelium64-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/berkelium64-webfont.woff') format('woff'),
+         url('myFonts/berkelium64-webfont.ttf') format('truetype'),
+         url('myFonts/berkelium64-webfont.svg#berkelium_64medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'large9normal';
+    src: url('myFonts/largn___-webfont.eot');
+    src: url('myFonts/largn___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/largn___-webfont.woff') format('woff'),
+         url('myFonts/largn___-webfont.ttf') format('truetype'),
+         url('myFonts/largn___-webfont.svg#large9normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'print_char_21medium';
+    src: url('myFonts/printchar21-webfont.eot');
+    src: url('myFonts/printchar21-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/printchar21-webfont.woff') format('woff'),
+         url('myFonts/printchar21-webfont.ttf') format('truetype'),
+         url('myFonts/printchar21-webfont.svg#print_char_21medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pr_number_3medium';
+    src: url('myFonts/prnumber3-webfont.eot');
+    src: url('myFonts/prnumber3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/prnumber3-webfont.woff') format('woff'),
+         url('myFonts/prnumber3-webfont.ttf') format('truetype'),
+         url('myFonts/prnumber3-webfont.svg#pr_number_3medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'visitor_tt2_brkregular';
+    src: url('myFonts/visitor2-webfont.eot');
+    src: url('myFonts/visitor2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myFonts/visitor2-webfont.woff') format('woff'),
+         url('myFonts/visitor2-webfont.ttf') format('truetype'),
+         url('myFonts/visitor2-webfont.svg#visitor_tt2_brkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/************************************************
+	css defs
+************************************************/
+
+* {
+	border:none;
+	padding:1px;
+	margin:0;
+	font:10px 'berkelium_64medium', Arial, Verdana, sans-serif;
+	
+}
+
+body {
+	 background:#fff;
+}
+
+#imagens{
+	background-image:url('world_black.png');
+	background-repeat:no-repeat;
+}
+
+a {
+	color:#000;
+	font-size:12px; 
+	text-decoration:none; 
+}
+a:hover {
+	color:#fff;
+}
+
+p {
+	margin:15px 0;
+}
+
+h1 {
+	font-family: 'large9normal';
+	font: large9normal;
+
+	font-size:30px; 
+	margin:10px 0;
+}
+
+h2 {
+	font-family: 'visitor_tt2_brkregular';
+	font:  visitor_tt1_brkregular;
+	font-size:15px; 
+	margin:10px 0;
+}
+
+#container {
+	margin:10px auto;
+	padding:10px; 
+	width:900px; 
+
+}
+
+#container ul {
+	height:50px;
+}
+
+#menu {
+	margin-top:10px;
+	margin-left:150px;
+	padding:10px; 
+	width:900px; 
+
+	border-bottom:1px solid #000;
+	border-width:5px;
+}
+
+#menu_button {
+	font-family: 'pr_number_3medium';
+	font: 20px pr_number_3medium;
+	padding-left:150px; 
+}
+
+/************************************************
+	black Button Rollover Example try
+************************************************/
+
+#menu_button .But li {
+	display:inline; 
+	list-style:none; 
+	margin-right:10px;
+
+}
+
+#menu_button .But li a {
+	background:#fff; 
+	border:1px solid #000;
+	padding:3px 10px; 
+}
+
+#menu_button .But li a:hover {
+	background:#000;
+	border:1px solid #000;
+	color:#fff;  
+}
+
+/************************************************
+    black Button Rollover Example try
+************************************************/
+
+.try {
+    display:inline; 
+    list-style:none; 
+	font-family: 'pr_number_3medium';
+    font: 18px pr_number_3medium;
+
+	background:#fff; 
+    border:1px solid #000;
+    padding:2px 8px;
+}
+
+.try:hover {
+    background:#000;
+    border:1px solid #000;
+    color:#fff;  
+}
+/************************************************
+    other stuff input ....
+************************************************/
+
+.input {
+    border: 1px solid #000;
+    background: #fff;
+	font-family: 'pr_number_3medium';
+	font: 15px pr_number_3medium;
+}
+.input:hover {
+    border: 1px solid #000;
+    background: #000;
+	color:#fff;  
+}
+
+.subtext {
+	border: 1px solid #000;
+    background: #000;
+	color:#fff;
+	font-family: 'visitor_tt2_brkregular';
+	font: 15px visitor_tt2_brkregular;
+}
+.subtext:hover {
+	border:none;
+    background: #fff;
+	color:#000;  
+}
+
+

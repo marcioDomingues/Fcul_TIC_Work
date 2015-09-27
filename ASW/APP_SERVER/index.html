@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+  <!-- NOTE -->
+
+<head>
+
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+ <title>Small World message board terminal</title>
+
+  <script type="text/javascript" src="javascripts/prototype.js"> </script>
+  <script type="text/javascript" src="javascripts/effects.js"> </script>
+  <script type="text/javascript" src="javascripts/window.js"> </script>
+  <script type="text/javascript" src="javascripts/window_effects.js"> </script>
+  <script type="text/javascript" src="javascripts/debug.js"> </script>
+
+  <script type="text/javascript" src="test.js"> </script>
+<!-- Add this to have a specific theme--> 
+
+  <link href="themes/default.css" rel="stylesheet" type="text/css"/>
+  <link href="themes/GREENwindow.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="styles/styleGreen.css" type="text/css" media="screen" />
+
+  
+</head>
+
+  <!-- NOTE -->
+
+
+<body onload="mainMsgBoard()">
+<div id="imagens">
+<div id="menu">
+
+  <div id="menu_button">
+      <h1>Small World Terminal</h1>
+    
+      <h2>a message board made for ASW</h2>
+      <ul class="But">
+        <!--
+        <li><a href="javascript:openWindowLogin()"><span>Login</span></a></li>
+        <li><a href="javascript:openWindow()"><span>Info</span></a></li>
+        -->
+<!-- external js -->
+        <li><a href="#" onclick="openWindowLogin()">Login</a></li>
+        <li><a href="#" onclick="openWindow()">Info</a></li>
+        <li><a href="#" onclick="win1()">test sample</a></li>
+
+      </ul>
+  </div>    
+</div>
+
+   <div id="container">
+
+    <!-- to load on js function newWindow() for tests -->
+    <div id="content" style="display:none">
+      <h2>NoConstraint</h2>
+      constraint: {no limits}
+      <br><br>
+      <ul class="try">
+      <a href="#" onclick="newWindow()">open a new window</a>
+      </ul>
+
+    </div>
+   
+    <h2>Asw small world test run</h2>
+    <p>This example was tested for recent browsers </p>
+	<p>Retro terminal style message board </p>
+	<p>Based on prototype-window and script.aculo.us libraries</p>
+    <ul class="example1">
+    
+    </ul>
+  
+    
+  </div>  
+  
+</body>
+
+
+
+  <!-- NOTE -->
+
+
+
+
+  <!-- NOTE -->
+
+
+
+
+
+
+
+
+
+</html>
